@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <!-- Criar a janela principal -->
+    <header>
+        <h1>Caixa de ferramentas</h1>
+    </header>
+
+    <!-- Botões -->
+    <div id="botoes">
+        <!-- Botão para o YouTube Downloader -->
+        <button id="botao-youtube-downloader">
+            <img src="static/icons/downloader.ico" alt="YouTube Downloader" />
+            <br />
+            YouTube Downloader
+        </button>
+
+        <!-- Botão para o Conversor MP4 para MP3 -->
+        <button id="botao-conversor-mp4-para-mp3">
+            <img src="static/icons/mp3.ico" alt="Conversor MP4 para MP3" />
+            <br />
+            Conversor MP4 para MP3
+        </button>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
